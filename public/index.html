@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat application</title>
+    <link href="default.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.3.min.js"></script>
+    <script src="Scripts/socket.io.js"></script>
+    <script src="Scripts/default.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header" style='letter-spacing: 10px;'>CHAT APPLICATION</h2>
+        <div class="userBox">
+            <h3 style="color: orange;">Active Users:</h3>
+            <div id="users"></div>
+        </div>
+        <div id="conversation"></div>
+        <div class="bottom-part">
+            <div id="dropZone">Drop Your File Here....</div>  
+	    <input id="data" type="text/file" placeholder="type message"/>         
+            <button id="datasend" type="button">Send</button>
+	    
+  	    <div class="attachimage">
+             <label for="imagefile" id="image">Attach Image
+             <input type="file" id="imagefile"/>
+             </label>                    
+             <label for="otherfile" id="other">Attach File 
+             <input type="file" id="otherfile" />
+             </label> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
